@@ -71,10 +71,17 @@
 
 # my_foods = ['pizza', 'popcorn', 'bacon', 'cheese'] # This is an example of copying a list using [:]
 # friend_foods = my_foods[:]
+<<<<<<< HEAD
 #
 # my_foods.append('tacos')
 # friend_foods.append('fishsticks')
 #
+=======
+
+# my_foods.append('tacos')
+# friend_foods.append('fishsticks')
+
+>>>>>>> b943cc67ddf7fb0f7ea1f05021c0aef35ab68408
 # print(f"My favorite foods are {my_foods}, but my friends like {friend_foods}")
 
 dimensions = (250, 50)
