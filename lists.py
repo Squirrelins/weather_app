@@ -66,16 +66,16 @@
 # print(f"Your pizza has {pizza_topings} on it!")
 
 # print(
-#     f"Mmm that sounds good I really like {pizza_topings[0]}, and {pizza_topings[1]} on my pizza! A lot of people like {pizza_topings[2]} on their pizza but I don't like it that much."
-# )
+#     f"Mmm that sounds good I really like {pizza_topings[0]}, and {pizza_topings[1]} on my pizza! A lot of people like
+#     {pizza_topings[2]} on their pizza, but I don't like it that much.")
 
-my_foods = ['pizza', 'popcorn', 'bacon', 'cheese'] # This is an example of copying a list using [:]
-friend_foods = my_foods[:]
-
-my_foods.append('tacos')
-friend_foods.append('fishsticks')
-
-print(f"My favorite foods are {my_foods}, but my friends like {friend_foods}")
+# my_foods = ['pizza', 'popcorn', 'bacon', 'cheese'] # This is an example of copying a list using [:]
+# friend_foods = my_foods[:]
+#
+# my_foods.append('tacos')
+# friend_foods.append('fishsticks')
+#
+# print(f"My favorite foods are {my_foods}, but my friends like {friend_foods}")
 
 dimensions = (250, 50)
 print(dimensions[0])

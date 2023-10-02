@@ -50,15 +50,23 @@
 #     print("You do not qualify for a loan.")
 
 
-x = float(input("Enter the grade you got on your test (1-100): "))
+# x = float(input("Enter the grade you got on your test (1-100): "))
 
-if x >= 90:
-    print("Your grade is an A!")
-elif x >= 80:
-    print("Your grade is a B!")
-elif x >= 70:
-    print("Your grade is a C!")
-elif x >= 60:
-    print("Your grade is a D!")
-else:
-    print("Your grade is a F! Whoops! ...Should've studied harder!")
+# if x >= 90:
+#     print("Your grade is an A!")
+# elif x >= 80:
+#     print("Your grade is a B!")
+# elif x >= 70:
+#     print("Your grade is a C!")
+# elif x >= 60:
+#     print("Your grade is a D!")
+# else:
+#     print("Your grade is a F! Whoops! ...Should've studied harder!")
+
+cars = ["audi", "bmw", "subaru", "toyota"]
+
+for cars in cars:
+    if cars == "bmw":
+        print(cars.upper())
+    else:
+        print(cars.title())
