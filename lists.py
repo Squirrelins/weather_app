@@ -23,30 +23,30 @@
 # # print(f"I've owned {len(cars)} cars in my life.")
 # # print(f"Currently I drive a {cars[0].title()} it's awesome! I love it!")
 
-discordFriends = []
-
-discordFriends.append("Nire")
-discordFriends.append("Grok")
-discordFriends.append("Lloyd")
-discordFriends.append("Lux")
-discordFriends.append("Jerry")
-discordFriends.append("Jent")
-discordFriends.append("Lightswitch")
-discordFriends.append("Mowse")
-discordFriends.append("BadDruid")
-discordFriends.append("Gina")
-discordFriends.append("Drachearyel")
-discordFriends.append("Blitz")
-discordFriends.append("Yeet")
-discordFriends.append("Greggles")
-
-
-for friend in discordFriends:
-    print(f"{friend.title()} is awesome!")
-
-print(
-    "\nAll my friends are awesome!\nWe play games together like World of Warcraft and Minecraft!"
-)
+# discordFriends = []
+#
+# discordFriends.append("Nire")
+# discordFriends.append("Grok")
+# discordFriends.append("Lloyd")
+# discordFriends.append("Lux")
+# discordFriends.append("Jerry")
+# discordFriends.append("Jent")
+# discordFriends.append("Lightswitch")
+# discordFriends.append("Mowse")
+# discordFriends.append("BadDruid")
+# discordFriends.append("Gina")
+# discordFriends.append("Drachearyel")
+# discordFriends.append("Blitz")
+# discordFriends.append("Yeet")
+# discordFriends.append("Greggles")
+#
+#
+# for friend in discordFriends:
+#     print(f"{friend.title()} is awesome!")
+#
+# print(
+#     "\nAll my friends are awesome!\nWe play games together like World of Warcraft and Minecraft!"
+# )
 
 # pizza_topings = []
 
@@ -68,3 +68,15 @@ print(
 # print(
 #     f"Mmm that sounds good I really like {pizza_topings[0]}, and {pizza_topings[1]} on my pizza! A lot of people like {pizza_topings[2]} on their pizza but I don't like it that much."
 # )
+
+my_foods = ['pizza', 'popcorn', 'bacon', 'cheese'] # This is an example of copying a list using [:]
+friend_foods = my_foods[:]
+
+my_foods.append('tacos')
+friend_foods.append('fishsticks')
+
+print(f"My favorite foods are {my_foods}, but my friends like {friend_foods}")
+
+dimensions = (250, 50)
+print(dimensions[0])
+print(dimensions[1])
