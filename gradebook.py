@@ -16,7 +16,7 @@ students['student_id'] = 100000 + len(students) + 1
 students['first_name'] = input("Enter the student's first name: ")
 students['last_name'] = input("Enter the student's last name: ")
 
-# Ask for the name of three courses and 3 grades for each course. I'm going to use a for loop  to do this 3 timnes per student.
+# Ask for the name of three courses and 3 grades for each course. I'm going to use a for loop to do this 3 times per student.
 
 courses = []
 grades = []
