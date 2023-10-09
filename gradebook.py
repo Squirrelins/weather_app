@@ -3,7 +3,7 @@
 print("Welcome to the school of hard knocks!")
 print("This is the gradebook program.")
 
-# Creat an empty dictionary.
+# Create an empty dictionary.
 
 students = {}
 
