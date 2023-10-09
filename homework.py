@@ -28,7 +28,7 @@ for i in range(3): # loop through quiz scores
     else:
         students['quiz_scores'].append(score) # append score to list
 
-average_score = sum(students['quiz_scores']) / len(students['quiz_scores']) # calculate average score by getting the sum of the scores then getting the length of the list and dividing by it to get the average.
+average_score = sum(students['quiz_scores']) / len(students['quiz_scores']) # calculate average score
 
 print(f"The student's average quiz score is {average_score}") # print average score
 
