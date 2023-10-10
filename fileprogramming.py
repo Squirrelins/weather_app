@@ -32,3 +32,8 @@
 # The os library is used to get the current environment separator.
 # The os library is used to get the current environment value.
 
+
+# Quitting a file is very important and should be considered the most important part of file programming.
+# Forgetting to close a file can result in a lot of data and memory being used.
+# The with statement is a Pythonic way to open files.
+# The with statement makes sure that the file is closed when the block inside the with statement is exited.
