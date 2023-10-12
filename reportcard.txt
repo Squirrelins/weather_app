@@ -1,0 +1,7 @@
+Student's Name: Asif
+Student's score in Math: [10.0, 20.0] and Total : 30.0
+Student's score in Physics: [30.0, 40.0] and Total : 70.0
+
+Student's Name: Marcos
+Student's score in Python: [50.0, 60.0] and Total : 110.0
+Student's score in C#: [70.0, 80.0] and Total : 150.0
