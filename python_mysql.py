@@ -1,6 +1,8 @@
+# Tested and worked 10/12/23 - Must enter password again for each query; do not share! Personal Info!
+
 import mysql.connector
 
-config = {"host": "localhost", "user": "root", "password": "", "database": ""}
+config = {"host": "localhost", "user": "root", "password": "", "database": "Oracle_HR"}
 
 conn = mysql.connector.connect(**config)
 cursor = conn.cursor()
