@@ -65,10 +65,10 @@ def compare_files(file1, file2):
         with open(file1, "r") as f1, open(file2, "r") as f2:
             content1 = f1.read()
             content2 = f2.read()
-            return content1 == content2
+            return content1 == content2 # True if files match
     except (FileNotFoundError, PermissionError, IOError) as e:
         print(f"Error comparing files: {e}")
-        return False
+        return False # False if files don't match
 
 
 if __name__ == "__main__":
