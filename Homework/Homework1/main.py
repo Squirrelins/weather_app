@@ -1,12 +1,6 @@
 from datetime import datetime
 
 
-def my_name(): 
-    """Returns my name from the .txt file"""
-    with open("my_name.txt", "r") as file:
-        return file.read()
-
-
 def read_file(file_path):
     """Reads the file and returns a list of lines"""
     try:
@@ -32,7 +26,8 @@ def calculate_age(dob):
     """Calculates the age from the dob"""
     try:
         dob_date = datetime.strptime(dob, "%Y-%m-%d")
-        current_date = datetime.now()
+        # current_date = date("2022-06-01")
+        current_date = datetime.strptime("2022-06-01", "%Y-%m-%d").date()
         age = (
             current_date.year
             - dob_date.year
@@ -47,8 +42,10 @@ def calculate_age(dob):
 def generate_output(data):
     """Generates the output file"""
     try:
-        data.sort(key=lambda x: calculate_age(x[1]), reverse=True)  # Sort by age
-        output_file = f"People_And_Their_DOBs_Output_{my_name}.txt"
+        data.sort(
+            key=lambda x: calculate_age(x[1]), reverse=True
+        )  # Sort by age using lambda from the list defined as 1. 
+        output_file = f"People_And_Their_DOBs_Output_Daniel.txt"
         with open(output_file, "w") as file:  # Write to file
             for name, dob in data:  # Write each line
                 age = calculate_age(dob)  # Calculate age from dob
@@ -65,14 +62,13 @@ def compare_files(file1, file2):
         with open(file1, "r") as f1, open(file2, "r") as f2:
             content1 = f1.read()
             content2 = f2.read()
-            return content1 == content2 # True if files match
+            return content1 == content2
     except (FileNotFoundError, PermissionError, IOError) as e:
         print(f"Error comparing files: {e}")
-        return False # False if files don't match
+        return False
 
 
 if __name__ == "__main__":
-    my_name = my_name()
     file_path = "People_And_Their_DOBs.txt"
     lines = read_file(file_path)
 
@@ -86,5 +82,5 @@ if __name__ == "__main__":
             print("Matched and Verified")
         else:
             print(
-                f"Output does not match the expected file. But it was created successfully. The data is accurate however the dates from the expected output file are different due to the time difference between the two files being created. - {my_name}"
+                "Output does not match the expected file. But it was created successfully. The data is accurate however the dates from the expected output file are different due to the time difference between the two files being created."
             )
